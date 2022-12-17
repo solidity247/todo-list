@@ -23,6 +23,7 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus a asperiores cumque ducimus tempore vero quam placeat enim ullam facilis ex corporis labore, rem accusantium, explicabo voluptatibus excepturi perferendis.</p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
