@@ -1,0 +1,20 @@
+.todo-container{
+    width:90%;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.buttons{
+    display: flex;
+    height: 50px;
+    width: 100px;
+    margin-left: auto;
+}
+button,.checkbox{
+    margin-top:10px;
+    margin-right: 20px;
+}
+.todo-card{
+     margin-top: 0;
+}
