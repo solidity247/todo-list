@@ -17,4 +17,5 @@ button,.checkbox{
 }
 .todo-card{
      margin-top: 0;
+     border-radius: 5px;
 }
