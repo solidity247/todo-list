@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import TodoContainer from "./TodoContainer";
+import Wrapper from "./Wrapper";
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -8,32 +9,23 @@ export default class Header extends React.Component {
   }
 
   render() {
-
     return (
-<>
-<header>
-  <a href="#" className="house">
-  <h2> <i class="fa-solid fa-house"></i>
-    Todo List
-  </h2>
-  </a>
-<div className="search">
-<input className="find" type="text" placeholder="Search here..."/>
-<div className="searchIcon"></div>
-  </div>
-</header>
-
-    </>
-    
+      <Wrapper>
+        <header>
+          <a href="#" className="house">
+            <h2>
+              {" "}
+              <i className="fa-solid fa-house"></i>
+              Todo List
+            </h2>
+          </a>
+          <div className="search">
+            <input className="find" type="text" placeholder="Search here..." />
+            <div className="searchIcon"></div>
+          </div>
+        </header>
+      </Wrapper>
     );
-    return(
-      <div>
-        <p>Header</p>
-        <button className="sortNameBtn">Sort by name</button>
-        <button className="sortDateBtn">Sort by date</button>
-      </div>
-    )
-
   }
 }
 

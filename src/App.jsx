@@ -3,14 +3,13 @@ import AddForm from "./components/AddForm";
 import Header from "./components/Header";
 import TodoContainer from "./components/TodoContainer";
 function App() {
+  // const data = [{ text: "ABC", isDone: true }];
   return (
-    <>
+    <div className="main">
       <Header></Header>
-      <TodoContainer />
+      <TodoContainer/>
       <AddForm />
-      <h2>Hello</h2>
-      <h2>I am just testing first time</h2>
-    </>
+    </div>
   );
 }
 

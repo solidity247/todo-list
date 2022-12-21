@@ -1,5 +1,6 @@
 import React from 'react';
 import './AddForm.css';
+import Wrapper from './Wrapper';
 
 class AddForm extends React.Component{
     constructor(props){
@@ -8,7 +9,7 @@ class AddForm extends React.Component{
     }
     render(){
         return(
-            <div>
+            <Wrapper>
                 <div className='input'>
                     <input type="text" placeholder='Create your to do'/>
                     <input type="text" placeholder='Description what to do'/>
@@ -17,7 +18,7 @@ class AddForm extends React.Component{
                     <button className='cancelBtn'>Cancel</button>
                     <button className='addBtn'>Add To Do</button>
                 </div>
-            </div>
+            </Wrapper>
         )
     }
 }
