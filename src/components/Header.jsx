@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
+import TodoContainer from "./TodoContainer";
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -7,6 +8,25 @@ export default class Header extends React.Component {
   }
 
   render() {
+
+    return (
+<>
+<header>
+  <a href="#" className="house">
+  <h2> <i class="fa-solid fa-house"></i>
+    Todo List
+  </h2>
+  </a>
+<div className="search">
+<input className="find" type="text" placeholder="Search here..."/>
+<div className="searchIcon"></div>
+  </div>
+</header>
+
+    </>
+    
+    );
+=======
     return(
       <div>
         <p>Header</p>
@@ -14,6 +34,7 @@ export default class Header extends React.Component {
         <button className="sortDateBtn">Sort by date</button>
       </div>
     )
+
   }
 }
 
