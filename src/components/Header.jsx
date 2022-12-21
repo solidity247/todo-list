@@ -3,6 +3,7 @@ import "./Header.css";
 import TodoContainer from "./TodoContainer";
 import Wrapper from "./Wrapper";
 
+
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -19,8 +20,11 @@ export default class Header extends React.Component {
               Todo List
             </h2>
           </a>
+
           <div className="search">
-            <input className="find" type="text" placeholder="Search here..." />
+
+            <input className="find" type="text" placeholder="&#xF002; sort by name" />
+            <input className="find" type="text" placeholder="&#xF002; filter by completion" />
             <div className="searchIcon"></div>
           </div>
         </header>

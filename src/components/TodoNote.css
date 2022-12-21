@@ -1,7 +1,8 @@
 .todo-note {
   box-sizing: border-box;
   width: 100%;
-  border: 1px dotted grey;
+  border: 1px solid rgb(16, 104, 203);
+  border-radius: 5px;
   /* margin: 5px; */
   padding: 8px;
 }
@@ -12,32 +13,47 @@
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-  background-color: #f7cc8c;
+  background-color: rgb(177, 206, 241);
+  color:#2043df;
 }
 
 .todo-note-date {
   display: flex;
   flex-direction: column;
   width: 5.5rem;
-  height: 5.5rem;
-  border: 1px solid #ececec;
-  
+  height: 4.5rem;
+  border: 1px solid #669fea;
+  border-radius: 7px;
+  color: rgb(105, 109, 109);
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
 }
 
 .todo-note-month {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
+  padding: 5px;
 }
 
 .todo-note-year {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
 
 }
 
 .todo-note-day {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
+}
+.btn {
+  color: rgb(105, 109, 109);
+  font-size: 20px;
+padding: 5px;
+}
+#checkbox {
+font-size: 50px;
+}
+.todo-note-content {
+margin-left: 50px;
 }
