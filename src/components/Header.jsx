@@ -7,7 +7,13 @@ export default class Header extends React.Component {
   }
 
   render() {
-    return <div className="header"></div>;
+    return(
+      <div>
+        <p>Header</p>
+        <button className="sortNameBtn">Sort by name</button>
+        <button className="sortDateBtn">Sort by date</button>
+      </div>
+    )
   }
 }
 
