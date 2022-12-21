@@ -7,6 +7,9 @@ function App() {
     <>
       <Header></Header>
       <TodoContainer />
+      <AddForm />
+      <h2>Hello</h2>
+      <h2>I am just testing first time</h2>
     </>
   );
 }
