@@ -1,6 +1,4 @@
 import React from "react";
-// import './Header.css'
-
 
 export default class TodoContainer extends React.Component {
     constructor(props){
@@ -9,9 +7,7 @@ export default class TodoContainer extends React.Component {
 
     render(){
         return (
-            
             <div className="todo-container">
-
             <div class="todo-card">
                 date, name, description edit-button, delete-button.
             </div>
@@ -24,8 +20,5 @@ export default class TodoContainer extends React.Component {
             </div>
         )
     }
-
-
-
 }
 
