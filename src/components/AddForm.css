@@ -18,3 +18,49 @@
 /* .btns{
     margin-left: 600px;
 } */
+
+.input, .btns {
+    background-color:hsl(221, 78%, 66%) ;
+}
+.cancelBtn {
+    font-family: cursive;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #2043df;
+    border-color: aliceblue;
+    color: white;
+    font-size: large;
+}
+.cancelBtn:hover {
+    background-color: rgb(94, 93, 97);
+
+}
+.addBtn:hover {
+    background-color: rgb(94, 93, 97);
+
+}
+
+.addBtn {
+    font-family: cursive;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #2043df;
+    border-color: aliceblue;
+    color: white;
+    font-size: large; 
+}
+
+.create-todo {
+    font-family: cursive;
+    border-radius: 5px;
+    height: 40px;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description {
+    font-family: cursive;
+    border-radius: 5px;
+    width: 60%;
+    height: 60px;
+}

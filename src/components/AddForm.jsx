@@ -9,10 +9,10 @@ class AddForm extends React.Component{
     }
     render(){
         return(
-            <Wrapper>
+            <Wrapper id="wrap">
                 <div className='input'>
-                    <input type="text" placeholder='Create your to do'/>
-                    <input type="text" placeholder='Description what to do'/>
+                    <input className='create-todo' type="text" placeholder='Create your to do'/> 
+                    <input className='description' type="text" placeholder='Description what to do'/>
                 </div>
                 <div className='btns'>
                     <button className='cancelBtn'>Cancel</button>

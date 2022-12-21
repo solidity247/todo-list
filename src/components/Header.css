@@ -23,6 +23,9 @@ body {
   /*position: relative;*/
 
 }
+h2 {
+  font-family: cursive;
+}
 
 header {
   width: 500px;
@@ -37,6 +40,7 @@ header {
 }
 
 .house {
+  
   background-color: var(--blue);
   text-decoration: none;
   color: white;
@@ -76,10 +80,4 @@ header {
 
 input {
   font-family: FontAwesome;
-  
-  
-}
-
-input ::placeholder{
-
 }

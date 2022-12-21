@@ -2,12 +2,13 @@
   box-sizing: border-box;
   width: 100%;
   border: 1px solid rgb(16, 104, 203);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   /* margin: 5px; */
   padding: 8px;
 }
 
 .todo-note {
+  font-family: cursive;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,8 +22,8 @@
   display: flex;
   flex-direction: column;
   width: 5.5rem;
-  height: 4.5rem;
-  border: 1px solid #669fea;
+  height: 4rem;
+  border: 2px solid #3555e7;
   border-radius: 7px;
   color: rgb(105, 109, 109);
   align-items: center;
@@ -56,4 +57,9 @@ font-size: 50px;
 }
 .todo-note-content {
 margin-left: 50px;
+}
+
+.todo-note-date:hover {
+  background-color: #3555e7;
+  color:white;
 }

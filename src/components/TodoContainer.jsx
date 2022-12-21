@@ -13,11 +13,11 @@ export default class TodoContainer extends React.Component {
       //we should map this for each object
       <Wrapper>
         <TodoNote></TodoNote>
-        <hr></hr>
+       
         <TodoNote></TodoNote>
-        <hr></hr>
+        
         <TodoNote></TodoNote>
-        <hr></hr>
+        
       </Wrapper>
       // add delete, edit functions . add save button
     );
