@@ -26,7 +26,6 @@ export default class Header extends React.Component {
     </>
     
     );
-=======
     return(
       <div>
         <p>Header</p>
