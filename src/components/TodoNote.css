@@ -1,0 +1,43 @@
+.todo-note {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px dotted grey;
+  /* margin: 5px; */
+  padding: 8px;
+}
+
+.todo-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #f7cc8c;
+}
+
+.todo-note-date {
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid #ececec;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-note-month {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.todo-note-year {
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.todo-note-day {
+  font-size: 1rem;
+  font-weight: bold;
+}
