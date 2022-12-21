@@ -41,7 +41,7 @@ export default class TodoNote extends React.Component {
     return (
       <div className="todo-note">
         <div>
-          <input type="checkbox" />
+          <input id="checkbox" type="checkbox" />
         </div>
         <div className="todo-note-date">
           <div className="todo-note-year">2022</div>

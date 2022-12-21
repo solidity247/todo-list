@@ -1,8 +1,7 @@
-
 :root {
 
-  --yEllow: hsl(50, 80%, 50%);
-  --orange: #f69610;
+  --babyblue: hsl(221, 78%, 66%);
+  --blue: #2043df;
 }
 
 #root {
@@ -10,54 +9,64 @@
   padding: 0px;
   width: 1000px;
 }
+
 html {
   padding: 0;
   margin: 0;
-  
+
 }
+
 body {
   margin: 0px;
   padding: 0px;
   /*height: 100vh;*/
   /*position: relative;*/
- 
+
 }
 
-header{
+header {
   width: 500px;
 }
+
 header {
   /* position: fixed; */
   width: 100%;
   display: grid;
   grid-template-columns: 200px auto;
- 
+
 }
 
 .house {
-  background-color: var(--orange);
+  background-color: var(--blue);
   text-decoration: none;
   color: white;
   text-align: center;
   justify-content: center;
 }
+
 .house:hover {
-  background-color: rgb(68, 176, 26);
-  color: var(--yEllow);
+  background-color: rgb(94, 93, 97);
+  color: var(--babyblue);
 }
 
 .search {
-  background-color: var(--yEllow);
-  margin: 0;
+  background-color: var(--babyblue);
+  margin: 0px;
   list-style-type: none;
   display: flex;
-  padding-left: 0;
+  padding-left: 10px;
 }
+
 .search .find {
   border-color: aliceblue;
-  border-radius: 7px;;
+  border-radius: 7px;
   color: white;
-  padding: 20px 25px;
+  padding: 15px 20px;
+}
+
+.find {
+  margin: 10px;
+  font-size: 10px;
 }
 
 .search .find:hover {
@@ -65,3 +74,12 @@ header {
   background-color: white;
 }
 
+input {
+  font-family: FontAwesome;
+  
+  
+}
+
+input ::placeholder{
+
+}
