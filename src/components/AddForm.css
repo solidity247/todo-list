@@ -21,6 +21,7 @@
 
 .input, .btns {
     background-color:hsl(221, 78%, 66%) ;
+    border-color: azure;
 }
 .cancelBtn {
     font-family: cursive;
@@ -63,4 +64,7 @@
     border-radius: 5px;
     width: 60%;
     height: 60px;
+}
+.wrapper{
+    border-radius: 5px;
 }
