@@ -33,11 +33,13 @@
     font-size: large;
 }
 .cancelBtn:hover {
-    background-color: rgb(94, 93, 97);
+    background-color: rgb(171, 165, 187);
+    color: blue;
 
 }
 .addBtn:hover {
-    background-color: rgb(94, 93, 97);
+    background-color: rgb(171, 165, 187);
+    color: blue;
 
 }
 

@@ -49,8 +49,8 @@ header {
 }
 
 .house:hover {
-  background-color: rgb(94, 93, 97);
-  color: var(--babyblue);
+  background-color: rgb(172, 169, 183);
+  color: var(--blue);
 }
 
 .search {
