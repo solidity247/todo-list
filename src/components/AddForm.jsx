@@ -11,12 +11,12 @@ class AddForm extends React.Component{
         return(
             <Wrapper id="wrap">
                 <div className='input'>
-                    <input className='create-todo' type="text" placeholder='Create your to do'/> 
-                    <input className='description' type="text" placeholder='Description what to do'/>
+                    <input className='create-todo' type="text" placeholder='&nbsp; Create your to do'/> 
+                    <input className='description' type="text" placeholder='&nbsp; Description what to do'/>
                 </div>
                 <div className='btns'>
                     <button className='cancelBtn'>Cancel</button>
-                    <button className='addBtn'>Add To Do</button>
+                    <button className='addBtn'>Add To-Do</button>
                 </div>
             </Wrapper>
         )

@@ -17,14 +17,14 @@ export default class Header extends React.Component {
             <h2>
               {" "}
               <i className="fa-solid fa-house"></i>
-              Todo List
+              &nbsp; To-Do List
             </h2>
           </a>
 
           <div className="search">
 
-            <input className="find" type="text" placeholder="&#xF002; sort by name" />
-            <input className="find" type="text" placeholder="&#xF002; filter by completion" />
+            <input className="find" type="text" placeholder="&#xF002; &nbsp; sort by name" />
+            <input className="find" type="text" placeholder="&#xF002; &nbsp; filter by completion" />
             <div className="searchIcon"></div>
           </div>
         </header>

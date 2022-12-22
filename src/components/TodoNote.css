@@ -8,7 +8,7 @@
 }
 
 .todo-note {
-  font-family: cursive;
+  font-family: monospace;
   display: flex;
   justify-content: space-between;
   align-items: center;
