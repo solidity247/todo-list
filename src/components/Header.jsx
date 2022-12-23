@@ -3,13 +3,17 @@ import "./Header.css";
 import TodoContainer from "./TodoContainer";
 import Wrapper from "./Wrapper";
 
-
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
   }
 
+  // props = {
+  // abc: "123"
+  // }
+
   render() {
+    console.log(this.props, "header props");
     return (
       <Wrapper>
         <header>
@@ -22,9 +26,16 @@ export default class Header extends React.Component {
           </a>
 
           <div className="search">
-
-            <input className="find" type="text" placeholder="&#xF002; &nbsp; sort by name" />
-            <input className="find" type="text" placeholder="&#xF002; &nbsp; filter by completion" />
+            <input
+              className="find"
+              type="checkbox"
+              placeholder="&#xF002; &nbsp; filter by completion"
+            />
+            <input
+              className="find"
+              type="text"
+              placeholder="&#xF002; &nbsp; search by name"
+            />
             <div className="searchIcon"></div>
           </div>
         </header>
