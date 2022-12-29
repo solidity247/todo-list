@@ -6,11 +6,10 @@ import Wrapper from "./Wrapper";
 export default class TodoContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: props.data };
+    this.state = {data: props.data };
   }
 
   render() {
-    console.log(this.props, "props of todoContainer");
     return (
       //we should map this for each object
       <Wrapper>

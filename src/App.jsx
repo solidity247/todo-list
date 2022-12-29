@@ -10,54 +10,47 @@ import TodoContainer from "./components/TodoContainer";
 // state - > data
 // update state with data + 1 (push) + add ID somehow
 
-const data = [
+const initialData = [
   {
     name: "Shopping for Chistmas",
     description:
       "Go to plaza and by presents. Go to plaza and by presents.Go to plaza and by presents.",
     isDone: false,
-    date: "12.23.2022",
-    id: "0001",
+    date: "2022-12-23",
+    id: 1,
   },
   {
     name: "Buy book for education",
     description: "Visit Amazon.com",
     isDone: true,
-    date: "12.22.2022",
-    id: "0002",
+    date: "2022-12-25",
+    id: 2,
   },
   {
     name: "Go to gym",
     description: "Go to Plnet Fitness",
     isDone: false,
-    date: "12.20.2022",
-    id: "0003",
+    date: "2022-12-27",
+    id: 3,
   },
 ];
-
-
 
 class App extends React.Component{
 constructor(){
   super()
   this.state = {
-    data: data
+    data: initialData
   }
 }
   // this function receieves data from input field comp AddForm. 
   receiveData = (passedData) => {
-
-    let temp = {...passedData, id: Math.random()+""}
-
-    this.setState({data: this.state.data.push(temp)})
+    const temp = {...passedData, id: this.state.data[this.state.data.length-1].id +1}
+    const copyData = this.state.data
+    this.setState({data: [...copyData, temp]})
   };
 
-
-
-
-
   render(){
-    console.log(Math.random()+"")
+    console.log(this.state.data)
     return (
       <div className="main">
         <Header></Header>

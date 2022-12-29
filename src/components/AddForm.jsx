@@ -34,9 +34,13 @@ class AddForm extends React.Component {
 
   // handeling collected data submission to upper component
   addToDoHandler = () => {
-    let temp = { ...this.state, isDone: false };
-    // console.log(temp);
+    let temp = { ...this.state, isDone: false};
     this.props.customEvent(temp);
+    this.setState({
+    date: "",
+    name: "",
+    description: "",
+    isClicked: true})
   };
 
   render() {
@@ -65,9 +69,9 @@ class AddForm extends React.Component {
           />
         </div>
         <div className="btns">
-          <button className="cancelBtn">Cancel</button>
-          <button className="addBtn" onClick={this.addToDoHandler}>
-            Add To-Do
+          <button className="cancelBtn">
+            Cancel</button>
+          <button className="addBtn" onClick={this.addToDoHandler}>Add To-Do
           </button>
         </div>
       </Wrapper>

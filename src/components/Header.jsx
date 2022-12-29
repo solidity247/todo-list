@@ -13,7 +13,6 @@ export default class Header extends React.Component {
   // }
 
   render() {
-    console.log(this.props, "header props");
     return (
       <Wrapper>
         <header>
@@ -24,7 +23,6 @@ export default class Header extends React.Component {
               &nbsp; To-Do List
             </h2>
           </a>
-
           <div className="search">
             <input
               className="find"
