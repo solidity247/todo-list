@@ -32,11 +32,25 @@ class AddForm extends React.Component {
     });
   };
 
+  resetInputs = () =>{
+    this.setState({date: "",
+    name: "",
+    description: ""})
+  }
+
+
   // handeling collected data submission to upper component
   addToDoHandler = () => {
-    let temp = { ...this.state, isDone: false };
+    if (this.state.date.length == 0 || this.state.name.length == 0) {
+      return;
+    }
+    let temp = { ...this.state, isDone: false, id: Math.random() + "" };
     // console.log(temp);
     this.props.customEvent(temp);
+    this.resetInputs();
+    // this.setState(()=>{
+    //   return { date: "", name: "", description: ""}
+    // });
   };
 
   render() {
@@ -65,7 +79,7 @@ class AddForm extends React.Component {
           />
         </div>
         <div className="btns">
-          <button className="cancelBtn">Cancel</button>
+          <button className="cancelBtn">Reset</button>
           <button className="addBtn" onClick={this.addToDoHandler}>
             Add To-Do
           </button>

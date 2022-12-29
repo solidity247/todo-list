@@ -13,7 +13,6 @@ export default class Header extends React.Component {
   // }
 
   render() {
-    console.log(this.props, "header props");
     return (
       <Wrapper>
         <header>

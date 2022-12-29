@@ -1,10 +1,16 @@
 import React from "react";
+import Wrapper from "./Wrapper";
 
 import "./TodoNote.css";
 
 const dateParser = (date) => {
-  const arrDate = date.split(".");
+  const arrDate = date.split("-");
   return arrDate;
+
+
+
+
+
 };
 export default class TodoNote extends React.Component {
   constructor(props) {
@@ -13,7 +19,7 @@ export default class TodoNote extends React.Component {
 
   render() {
     // destructuring and assignment by array
-    const [month, day, year] = dateParser(this.props.date);
+    const [year, month, day] = dateParser(this.props.date);
     return (
       <div className="todo-note">
         <div>
