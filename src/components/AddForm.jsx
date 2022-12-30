@@ -36,6 +36,7 @@ class AddForm extends React.Component {
     this.setState({date: "",
     name: "",
     description: ""})
+
   }
 
 
@@ -79,7 +80,7 @@ class AddForm extends React.Component {
           />
         </div>
         <div className="btns">
-          <button className="cancelBtn">Reset</button>
+          <button className="cancelBtn" onClick={this.resetInputs} >Reset</button>
           <button className="addBtn" onClick={this.addToDoHandler}>
             Add To-Do
           </button>

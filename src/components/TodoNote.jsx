@@ -1,25 +1,39 @@
 import React from "react";
+import EditForm from "./EditForm";
 import Wrapper from "./Wrapper";
+
 
 import "./TodoNote.css";
 
 const dateParser = (date) => {
   const arrDate = date.split("-");
   return arrDate;
-
-
-
-
-
 };
 export default class TodoNote extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isEditOn: false,
+    };
   }
 
+  deleteHandler = () => {
+    this.props.transitFunctionNote(this.props.id);
+  };
+
+  editHandler = () =>{
+    this.setState( {isEditOn: !this.state.isEditOn} )
+  }
   render() {
     // destructuring and assignment by array
     const [year, month, day] = dateParser(this.props.date);
+
+    // updateName = () =>{
+
+    // }
+
+
+
     return (
       <div className="todo-note">
         <div>
@@ -36,13 +50,18 @@ export default class TodoNote extends React.Component {
           <p className="todo-note-description">{this.props.desc}</p>
         </div>
         <div className="buttons todo-notes-buttons">
-          <button className="todo-note-btn-edit btn edit">
+          <button className="todo-note-btn-edit btn edit" onClick={this.editHandler}>
             <i className="fa-solid fa-pen-to-square"></i>
           </button>
-          <button className="todo-note-btn-delete btn delete">
-            <i className="fa fa-trash"></i>
+          <button
+            className="todo-note-btn-delete btn delete"
+            id={this.props.id}
+            onClick={this.deleteHandler}
+          >
+            <i className="fa fa-trash" id={this.props.id}></i>
           </button>
         </div>
+        {this.state.isEditOn && <EditForm newName={this.updateName}></EditForm>}
       </div>
     );
   }

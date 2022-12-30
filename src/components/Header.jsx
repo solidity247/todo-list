@@ -12,6 +12,12 @@ export default class Header extends React.Component {
   // abc: "123"
   // }
 
+  searchHandler = (event) =>{
+    // console.log(event.target.value)
+    this.props.searchInput(event.target.value)
+
+  }
+
   render() {
     return (
       <Wrapper>
@@ -25,15 +31,16 @@ export default class Header extends React.Component {
           </a>
 
           <div className="search">
-            <input
+            {/* <input
               className="find"
               type="checkbox"
               placeholder="&#xF002; &nbsp; filter by completion"
-            />
+            /> */}
             <input
               className="find"
               type="text"
               placeholder="&#xF002; &nbsp; search by name"
+              onChange={this.searchHandler}
             />
             <div className="searchIcon"></div>
           </div>

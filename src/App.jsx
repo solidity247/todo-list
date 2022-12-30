@@ -9,7 +9,7 @@ import TodoContainer from "./components/TodoContainer";
 // state - > data
 // update state with data + 1 (push) + add ID somehow
 
-const data = [
+const initialData = [
   {
     name: "Shopping for Chistmas",
     description:
@@ -34,32 +34,56 @@ const data = [
   },
 ];
 
-function updateArray(array, element){
-  return [...array, element]
-
+function updateArray(array, element) {
+  return [...array, element];
 }
 
-
+const deleteElement = (array, id) => {
+  let index = array.findIndex((el) => el.id == id);
+  array.splice(index, 1);
+  return array;
+};
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data
+      data: initialData,
+      searchParam: ""
     };
   }
   // this function receieves data from input field comp AddForm.
   receiveData = (passedData) => {
-    this.setState({data: updateArray(this.state.data, passedData)})
-   };
+    this.setState({ data: updateArray(this.state.data, passedData) });
+  };
+
+  appDeleteHandler = (id) => {
+    console.log(id, "from app");
+    let tempData = this.state.data;
+    tempData = deleteElement(tempData, id)
+    this.setState({data: tempData})
+
+    // find element with id - id
+    // delete this element
+    // rerender list
+  };
+
+  searchHandler = (searchInput) =>{
+    // console.log(searchInput, "searching in App.JS")
+    
+    this.setState({searchParam: searchInput})
+  }
 
   render() {
-
     // console.log(this.state.data)
     return (
       <div className="main">
-        <Header></Header>
-        <TodoContainer data={this.state.data} />
+        <Header searchInput={this.searchHandler} ></Header>
+        <TodoContainer
+          data={this.state.data}
+          transitFunctionApp={this.appDeleteHandler}
+          searchCreterias={this.state.searchParam}
+        />
         <AddForm customEvent={this.receiveData} />
       </div>
     );
@@ -71,7 +95,7 @@ export default App;
 // function addTodotoData({some obj}){ data + pushed object + ID  as array }
 
 // Problem #1. Cancel button -> rename to reset.            // DONE!!!
-// Problem #2. Clear inputs after adding new toDo.          
+// Problem #2. Clear inputs after adding new toDo.
 // Problem #3. Edit / Delete Buttons functionality logic.
 // Problem #4. Search functionality logic.
 // Problem #5. Date formatting.
